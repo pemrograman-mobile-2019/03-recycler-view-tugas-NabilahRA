@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     >
@@ -14,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:id="@+id/message_button"
@@ -23,9 +22,5 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textSize="10sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="45dp" />
-</android.support.constraint.ConstraintLayout>
-
-
+        />
+</LinearLayout>

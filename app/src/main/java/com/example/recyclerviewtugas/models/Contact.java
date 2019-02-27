@@ -1,4 +1,4 @@
-package com.example.recyclerviewtugas.models;
+package com.example.recyclerview.models;
 
 import java.util.ArrayList;
 
@@ -6,12 +6,12 @@ public class Contact {
     private String mName;
     private boolean mOnline;
 
-    public Contact(String name, boolean online) {
-        mName = name;
-        mOnline = online;
+    public Contact(String mName, boolean mOnline) {
+        this.mName = mName;
+        this.mOnline = mOnline;
     }
 
-    public String getName() {
+    public String getmName() {
         return mName;
     }
 
@@ -19,7 +19,7 @@ public class Contact {
         return mOnline;
     }
 
-    private static int lastContactId = 10;
+    private static int lastContactId = 0;
 
     public static ArrayList<Contact> createContactsList(int numContacts) {
         ArrayList<Contact> contacts = new ArrayList<Contact>();
@@ -29,9 +29,5 @@ public class Contact {
         }
 
         return contacts;
-    }
-
-    public int getmName() {
-        return 0;
     }
 }

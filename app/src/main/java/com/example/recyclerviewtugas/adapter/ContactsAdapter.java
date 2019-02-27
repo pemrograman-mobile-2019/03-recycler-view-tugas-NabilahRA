@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.recyclerviewtugas.R;
-import com.example.recyclerviewtugas.models.Contact;
+import com.example.recyclerview.models.Contact;
 
 import java.util.List;
 
