@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.recyclerviewtugas.adapter.ContactsAdapter;
-import com.example.recyclerview.models.Contact;
+import com.example.recyclerviewtugas.models.Contact;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.recyclerview.models;
+package com.example.recyclerviewtugas.models;
 
 import java.util.ArrayList;
 
