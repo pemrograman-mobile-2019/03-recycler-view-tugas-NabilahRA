@@ -1,33 +1,74 @@
 package com.example.recyclerviewtugas.models;
 
-import java.util.ArrayList;
-
 public class Contact {
-    private String mName;
-    private boolean mOnline;
+    private String id;
+    private String name;
+    private String desc;
+    private String img;
+    private int img_local;
 
-    public Contact(String mName, boolean mOnline) {
-        this.mName = mName;
-        this.mOnline = mOnline;
+    public Contact(String id, String name, String desc, String img) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.img = img;
     }
 
-    public String getmName() {
-        return mName;
+    public Contact(String id, String name, String desc, int img_local) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.img_local = img_local;
     }
 
-    public boolean isOnline() {
-        return mOnline;
+
+    public String getId() {
+
+        return id;
     }
 
-    private static int lastContactId = 0;
+    public void setId(String id) {
 
-    public static ArrayList<Contact> createContactsList(int numContacts) {
-        ArrayList<Contact> contacts = new ArrayList<Contact>();
-
-        for (int i = 1; i <= numContacts; i++) {
-            contacts.add(new Contact("Person " + ++lastContactId, i <= numContacts / 2));
-        }
-
-        return contacts;
+        this.id = id;
     }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+    public String getImg() {
+
+        return img;
+    }
+
+    public void setImg(String img) {
+
+        this.img = img;
+    }
+
+    public int getImg_local() {
+
+        return img_local;
+    }
+
+    public void setImg_local(int img_local) {
+
+        this.img_local = img_local;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+
+        this.desc = desc;
+    }
+}
 }

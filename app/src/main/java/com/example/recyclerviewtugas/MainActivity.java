@@ -26,4 +26,5 @@ public class MainActivity extends AppCompatActivity {
         rv.setAdapter(contactsAdapter);
         rv.setLayoutManager(layoutManager);
     }
+
 }
