@@ -19,7 +19,7 @@ public class Contact {
         return mOnline;
     }
 
-    private static int lastContactId = 0;
+    private static int lastContactId = 10;
 
     public static ArrayList<Contact> createContactsList(int numContacts) {
         ArrayList<Contact> contacts = new ArrayList<Contact>();
@@ -29,5 +29,9 @@ public class Contact {
         }
 
         return contacts;
+    }
+
+    public int getmName() {
+        return 0;
     }
 }
